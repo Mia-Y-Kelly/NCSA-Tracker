@@ -1,0 +1,45 @@
+.navbar__container{
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 1.7rem, 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+}
+nav{
+    text-align: center;
+    gap: 5rem;
+    font-weight:300;
+    font-size: 1.1rem;
+    margin: 0.8rem auto 0.8rem;
+    width:80%;
+}
+nav a{
+    padding: 0.9rem;
+}
+.navbar__image{
+    height: 10vmin;
+    pointer-events: none;
+
+}
+/*================ MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px){
+    .container.testimonials__container {
+        width:60%;
+    }
+}
+/*================ MEDIA QUERIES (SMALL DEVICES) =============*/
+@media screen and (max-width: 600px){
+    .container.testimonials__container{
+        width: var(--container-width-sm);
+    }
+    .client__review{
+        width: var(--container-width-sm);
+    }
+}
