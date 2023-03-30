@@ -11,6 +11,7 @@ const NavBar = () => {
                 <div className="navbar__icon">
                     <img src={logo} className="navbar__image" alt="logo" />
                 </div>
+                <h2>NCSA Lab Hours Manager</h2>
                 <nav>
                     <a href='#enterhours' onClick={() => setActiveNav('')} className={activeNav === '#' ? 'active' : ''}> Enter Hours</a>
                     <a href='#viewhours' onClick={() => setActiveNav('')} className={activeNav === '#' ? 'active' : ''}> View Hours</a>

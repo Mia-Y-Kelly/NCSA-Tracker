@@ -1,16 +1,13 @@
 .navbar__container{
     background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    display: block;
-    padding: 1.7rem, 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     gap: 5rem;
-    border-radius: 1rem;
     backdrop-filter: blur(15px);
+}
+h2 {
+    text-align: center;
+    margin: 0.8rem auto 0.8rem;
+    white-space: nowrap;
 }
 nav{
     text-align: center;
@@ -30,6 +27,7 @@ nav a{
 }
 .hamburger__icon{
     display:none;
+    position:right;
 }
 /*================ MEDIA QUERIES (MEDIUM DEVICES) =============*/
 @media screen and (max-width: 1024px){
@@ -42,10 +40,10 @@ nav a{
 }
 /*================ MEDIA QUERIES (SMALL DEVICES) =============*/
 @media screen and (max-width: 600px){
-    .navbar__container{
-        width: var(--container-width-sm);
+    nav a{
+        display:none;
     }
-    .client__review{
-        width: var(--container-width-sm);
+    nav a.hamburger__icon{
+        display: flex;
     }
 }
