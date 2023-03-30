@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 import { useState } from 'react'
 import logo from '../../assets/NCSA_Logo.png'
-import {GiHamburgerMenu} from 'react-icons/vsc'
+import {GiHamburgerMenu} from 'react-icons/gi'
 const NavBar = () => {
     const [activeNav, setActiveNav] = useState('#');
     return (
@@ -16,6 +16,7 @@ const NavBar = () => {
                     <a href='#viewhours' onClick={() => setActiveNav('')} className={activeNav === '#' ? 'active' : ''}> View Hours</a>
                     <a href='#portol' onClick={() => setActiveNav('')} className={activeNav === '#' ? 'active' : ''}> Officer Portal</a>
                     <a href='#signout' onClick={() => setActiveNav('')} className={activeNav === '#' ? 'active' : ''}> Sign Out</a>
+                    <a href='#' onClick={ () => setActiveNav('#')} className="hamburger__icon"> <GiHamburgerMenu /> </a>
                 </nav>
             </div>
         </section>
