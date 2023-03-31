@@ -17,7 +17,7 @@ nav{
     margin: 0.8rem auto 0.8rem;
     width:80%;
 }
-nav a{
+nav Link{
     padding: 0.9rem;
 }
 .navbar__image{
@@ -25,7 +25,7 @@ nav a{
     pointer-events: none;
 
 }
-.hamburger__icon{
+nav Link.hamburger__icon{
     display:none;
     position:right;
 }
@@ -34,7 +34,7 @@ nav a{
     nav a{
         display:none;
     }
-    nav a.hamburger__icon{
+    nav Link.hamburger__icon{
         display: flex;
     }
 }
