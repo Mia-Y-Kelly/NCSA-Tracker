@@ -1,49 +1,64 @@
-.navbar__container{
-    background: rgba(0, 0, 0, 0.3);
-    display: flex;
-    gap: 5rem;
-    backdrop-filter: blur(15px);
+.navbar__container {
+  background: #001d3d;
+  display: flex;
+  gap: 5rem;
+  backdrop-filter: blur(15px);
 }
 h2 {
-    text-align: center;
-    margin: 0.8rem auto 0.8rem;
-    white-space: nowrap;
+  text-align: center;
+  color: white;
+  margin: 0.8rem auto 0.8rem;
+  white-space: nowrap;
 }
-nav{
-    text-align: center;
-    gap: 5rem;
-    font-weight:300;
-    font-size: 1.1rem;
-    margin: 0.8rem auto 0.8rem;
-    width:80%;
-}
-nav Link{
-    padding: 0.9rem;
-}
-.navbar__image{
-    height: 10vmin;
-    pointer-events: none;
 
+.accent {
+    margin-top: 0;
+    background: #ffcd00;
+    height: .25rem;
+    border: none;
 }
-nav Link.hamburger__icon{
-    display:none;
-    position:right;
+
+nav {
+  text-align: center;
+  gap: 5rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin: 0.8rem auto 0.8rem;
+  width: 80%;
 }
+
+nav ul a link.hamburger__icon {
+  display: none;
+  position: right;
+  color: #ffcd00;
+}
+
+nav ul a:visited,
+nav ul a:link {
+  padding: 0.9rem;
+  color: white;
+}
+
+.navbar__image {
+  height: 10vmin;
+  pointer-events: none;
+}
+
 /*================ MEDIA QUERIES (MEDIUM DEVICES) =============*/
-@media screen and (max-width: 1024px){
-    nav a{
-        display:none;
-    }
-    nav Link.hamburger__icon{
-        display: flex;
-    }
+@media screen and (max-width: 1024px) {
+  nav a {
+    display: none;
+  }
+  nav Link.hamburger__icon {
+    display: flex;
+  }
 }
 /*================ MEDIA QUERIES (SMALL DEVICES) =============*/
-@media screen and (max-width: 600px){
-    nav a{
-        display:none;
-    }
-    nav a.hamburger__icon{
-        display: flex;
-    }
+@media screen and (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+  nav a.hamburger__icon {
+    display: flex;
+  }
 }

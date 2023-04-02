@@ -35,8 +35,10 @@ const NavBar = () => {
                                 <Link to="/" className='hamburger__icon'>  <GiHamburgerMenu /> </Link>
                             </a>
                         </ul>
+                        
                     </nav>
                 </div>
+                <hr className="accent"/>
             </section>
     )
 }
