@@ -11,14 +11,8 @@ const App = () => {
         <>
             <Router>
                 <NavBar />
-                {/* <div className='container'>
-                    {/* <EnterHour /> */}
-                {/* </div> */}
                 <Routes>
                     <Route path="/" element={
-                        <EnterHour />
-                        } />
-                    <Route path="/enterhour" element={
                         <EnterHour />
                         } />
                     <Route path="/enterhour" element={

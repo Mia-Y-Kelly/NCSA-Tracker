@@ -12,10 +12,10 @@ h2 {
 }
 
 .accent {
-    margin-top: 0;
-    background: #ffcd00;
-    height: .25rem;
-    border: none;
+  margin-top: 0;
+  background: #ffcd00;
+  height: 0.25rem;
+  border: none;
 }
 
 nav {
@@ -37,6 +37,7 @@ nav ul a:visited,
 nav ul a:link {
   padding: 0.9rem;
   color: white;
+  text-decoration: none;
 }
 
 .navbar__image {
