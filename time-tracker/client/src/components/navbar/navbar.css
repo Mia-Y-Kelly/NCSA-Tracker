@@ -1,14 +1,14 @@
 .navbar__container {
   background: #001d3d;
   display: flex;
-  gap: 5rem;
+  flex: row;
+  height: 5.5rem;
   backdrop-filter: blur(15px);
 }
+
 h2 {
-  text-align: center;
   color: white;
-  margin: 0.8rem auto 0.8rem;
-  white-space: nowrap;
+  margin: 1.5rem 0 0 1rem;
 }
 
 .accent {
@@ -18,48 +18,70 @@ h2 {
   border: none;
 }
 
-nav {
-  text-align: center;
-  gap: 5rem;
-  font-weight: 300;
-  font-size: 1.1rem;
-  margin: 0.8rem auto 0.8rem;
-  width: 80%;
-}
-
-nav ul a link.hamburger__icon {
-  display: none;
-  position: right;
+.hamburger_passive {
+  visibility: visible;
+  position: relative;
+  top: 0.75rem;
+  left: 70rem;
   color: #ffcd00;
 }
 
-nav ul a:visited,
-nav ul a:link {
-  padding: 0.9rem;
-  color: white;
-  text-decoration: none;
+.hamburger_active {
+  visibility: visible;
+  position: relative;
+  top: 0.75rem;
+  left: 1rem;
+  color: #ffcd00;
 }
 
+/*Display Container when hamburger is clicked on*/
+.navbar_active {
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  height: 100vh;
+  width: 10rem;
+  flex: column;
+  background-color: #001d3d;
+}
+
+.navbar_passive {
+  visibility: hidden;
+}
+
+/* Style links specifically */
+.links {
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.links:hover {
+  color: #ffcd00;
+}
+
+/*Resize logo*/
 .navbar__image {
+  margin: 0.5rem 0 0 0.5rem;
   height: 10vmin;
   pointer-events: none;
 }
 
 /*================ MEDIA QUERIES (MEDIUM DEVICES) =============*/
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   nav a {
     display: none;
   }
   nav Link.hamburger__icon {
     display: flex;
   }
-}
+} */
 /*================ MEDIA QUERIES (SMALL DEVICES) =============*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   nav a {
     display: none;
   }
   nav a.hamburger__icon {
     display: flex;
   }
-}
+} */
