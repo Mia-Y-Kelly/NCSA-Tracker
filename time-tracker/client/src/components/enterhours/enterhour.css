@@ -1,0 +1,60 @@
+.form-container {
+  background-color: #d0d2dd;
+  margin: 0 auto 0 auto;
+  text-align: center;
+
+  max-width: 40%;
+  min-width: 35%;
+  height: auto;
+
+  border: 3px solid #00356b;
+  border-radius: 15px;
+}
+
+.form-container form {
+  margin: 0 25% 0 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form h2 {
+  text-align: center;
+  color: black;
+}
+
+.form-container form input,
+select,
+textarea {
+  margin: 0 0 2% 0;
+  padding: 3% 2% 3% 2%;
+  border: none;
+  border-radius: 1pt;
+  background-color: #f4f5fa;
+}
+
+.form-container form input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border: none;
+  border-radius: 1pt;
+  outline: none;
+  box-shadow: 0 0 0 1pt #00356b;
+}
+
+.form-container form textarea {
+  resize: none;
+}
+
+.form-container form input[type="submit"] {
+  padding: 3% 7% 3% 7%;
+  margin: 5% auto 5% auto;
+  max-width: 50%;
+  text-align: center;
+
+  background-color: #00356b;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #00356b;
+  border-radius: 5px;
+}
